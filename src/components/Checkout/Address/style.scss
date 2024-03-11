@@ -1,0 +1,36 @@
+.checkout-main-container {
+  .address-action-btns {
+    // margin-left: 10px;
+    padding-left: 70px;
+  }
+  .address-li {
+    padding: 26px;
+    border: 1px solid #eeeee0;
+
+    .user-address-type {
+      color: #212121;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .checkout-main-container {
+    .address-action-btns {
+      padding-left: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-main-container {
+    .address-action-btns {
+      padding-left: 2px;
+    }
+    .address-li {
+      padding: 25px 10px;
+    }
+  }
+}

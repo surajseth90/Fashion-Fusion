@@ -1,0 +1,89 @@
+.address-popup-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+
+  .address-popup-wrapper {
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 20px;
+
+    .epp-top {
+      padding: 15px 30px;
+      background-color: #fafafa;
+      box-shadow: 0 1px 0 0 #e6e6e6;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        width: 20px;
+        height: 20px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .pin-code-div {
+      padding: 0 10px;
+    }
+
+    form {
+      padding: 15px 30px;
+
+      #user-edit-email {
+        background-color: #eeeeee;
+      }
+
+      .col-form-label {
+        width: 100%;
+        color: #757575;
+        font-family: Montserrat;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 18px;
+      }
+
+      .user-name-row {
+        select {
+          border: 1px solid #bdbdbd;
+          border-right: none;
+          border-top-left-radius: 0.25rem;
+          border-bottom-left-radius: 0.25rem;
+          padding-right: 30pxSS;
+        }
+
+        input {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .address-popup-container {
+    .address-popup-wrapper {
+      margin: 0;
+      height: 100%;
+      border: 1px solid rgba(222, 222, 222, 0.5);
+
+      .pin-code-div {
+        padding: 0;
+      }
+
+      .city-pin-div {
+        flex-direction: column;
+      }
+    }
+  }
+}
